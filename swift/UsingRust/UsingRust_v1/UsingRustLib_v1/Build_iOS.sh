@@ -4,9 +4,9 @@ pushd `pwd`
 echo pwd=`pwd`
 ls
 
-LIB_IOS_X86_64=target/x86_64-apple-ios/debug/libUsingRustLib_v1.a;
-LIB_IOS_ARM_64=target/aarch64-apple-ios/debug/libUsingRustLib_v1.a;
-LIB_IOS_FAT=target/libUsingRustLib_v1.a;
+LIB_IOS_X86_64=target/x86_64-apple-ios/debug/libSwift_UsingRustLib_v1.a;
+LIB_IOS_ARM_64=target/aarch64-apple-ios/debug/libSwift_UsingRustLib_v1.a;
+LIB_IOS_FAT=target/libSwift_UsingRustLib_v1.a;
 LIB_HEADER=target/UsingRust_v1.h;
 CARGO=$(which cargo)
 LIPO=$(which lipo)
