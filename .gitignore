@@ -1,6 +1,6 @@
 #swift
 swift/UsingRust/UsingRust_v1/UsingRust_v1/UsingRust_v1/RustLibrary/libUsingRustLib_v1.a
-swift/UsingRust/UsingRust_v1/UsingRustLib_v1/target/
+#swift/UsingRust/UsingRust_v1/UsingRustLib_v1/target/
 #objective-c
 objective-c/UsingRust/UsingRust_v1/UsingRust_v1/UsingRust_v1/RustLibrary/libUsingRustLib_v1.a
-objective-c/UsingRust/UsingRust_v1/UsingRustLib_v1/target
+#objective-c/UsingRust/UsingRust_v1/UsingRustLib_v1/target
