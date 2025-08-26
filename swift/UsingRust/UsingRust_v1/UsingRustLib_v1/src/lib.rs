@@ -10,3 +10,9 @@ pub extern "C" fn fStringFromRustLibrary() -> *const c_char {
 	let oOutput: CString = CString::new("String from Rust library").unwrap();
 	return oOutput.into_raw();
 }
+#[no_mangle]
+pub extern "C" fn fStartRelay() -> *const c_char {
+
+	let oOutput: CString = CString::new("fStartRelay").unwrap();
+	return oOutput.into_raw();
+}
