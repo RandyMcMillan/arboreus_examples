@@ -10,7 +10,8 @@ import UIKit
 
 class AViewControllerTemplate: UIViewController {
 
-	var pViewContent: UIView = UIView();
+    var pViewContent: UIView = UIView();
+    var pRelayViewContent: UIView = UIView();
 	var pViewWarpper: UIView = UIView();
 	
 	override func loadView() {
@@ -23,6 +24,8 @@ class AViewControllerTemplate: UIViewController {
 		
 		pViewContent.translatesAutoresizingMaskIntoConstraints = false;
 		pViewContent.backgroundColor = __COLOR_FIOLENT_LIGHT;
+        pRelayViewContent.translatesAutoresizingMaskIntoConstraints = false;
+        pRelayViewContent.backgroundColor = __COLOR_FIOLENT_LIGHT;
 		pViewWarpper.addSubview(pViewContent);
 	}
 	
