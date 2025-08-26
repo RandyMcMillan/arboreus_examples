@@ -38,7 +38,7 @@ class AMainViewController: AViewControllerTemplate {
         pLabel.text = "No data from Rust";
         pLabel.textColor = __COLOR_WHITE;
         pLabel.font = UIFont.systemFont(ofSize: 20.0);
-        pLabel.translatesAutoresizingMaskIntoConstraints = false;
+        pLabel.translatesAutoresizingMaskIntoConstraints = true;
         pLabel.textAlignment = .center;
         pViewContent.addSubview(pLabel);
         pLabel.centerYAnchor.constraint(equalTo: pViewContent.centerYAnchor, constant: -40.0).isActive = true;
@@ -47,25 +47,24 @@ class AMainViewController: AViewControllerTemplate {
         pLabel.rightAnchor.constraint(equalTo: pViewContent.rightAnchor).isActive = true;
         
         
-        pRelayButton.setTitle("Get from Rust", for: .normal);
+        pRelayButton.setTitle("Get Relay from Rust", for: .normal);
         pRelayButton.addTarget(self, action: #selector(mActionGetDataFromRustLibrary(inSender:)), for: .touchUpInside);
         pRelayViewContent.addSubview(pRelayButton);
-        //pRelayButton.topAnchor.constraint(equalTo: pViewContent.topAnchor).isActive = true;
-        //pRelayButton.heightAnchor.constraint(equalToConstant: 80.0).isActive = true;
-        //pRelayButton.leftAnchor.constraint(equalTo: pViewContent.leftAnchor).isActive = //true;
-        //pRelayButton.rightAnchor.constraint(equalTo: pViewContent.rightAnchor).isActive = //true;
-        //
-        //pRelayLabel.text = "No data from Rust";
-        //pRelayLabel.textColor = __COLOR_WHITE;
-        //pRelayLabel.font = UIFont.systemFont(ofSize: 20.0);
-        //pRelayLabel.translatesAutoresizingMaskIntoConstraints = false;
-        //pRelayLabel.textAlignment = .center;
-        ////pViewContent.addSubview(pLabel);
-        //pRelayLabel.centerYAnchor.constraint(equalTo: pViewContent.centerYAnchor, constant: //-40.0).isActive = true;
-        //pRelayLabel.heightAnchor.constraint(equalToConstant: 80.0).isActive = true;
-        //pRelayLabel.leftAnchor.constraint(equalTo: pViewContent.leftAnchor).isActive = true;
-        //pRelayLabel.rightAnchor.constraint(equalTo: pViewContent.rightAnchor).isActive = true;
+        pRelayButton.topAnchor.constraint(equalTo: pRelayViewContent.topAnchor).isActive = true;
+        pRelayButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true;
+        pRelayButton.leftAnchor.constraint(equalTo: pRelayViewContent.leftAnchor).isActive = true;
+        pRelayButton.rightAnchor.constraint(equalTo: pRelayViewContent.rightAnchor).isActive = true;
         
+        pRelayLabel.text = "No Relay data from Rust";
+        pRelayLabel.textColor = __COLOR_WHITE;
+        pRelayLabel.font = UIFont.systemFont(ofSize: 20.0);
+        pRelayLabel.translatesAutoresizingMaskIntoConstraints = true;
+        pRelayLabel.textAlignment = .center;
+        pRelayViewContent.addSubview(pRelayLabel);
+        //pRelayLabel.centerYAnchor.constraint(equalTo: pViewContent.centerYAnchor, constant: //-40.0).isActive = true;
+        pRelayLabel.heightAnchor.constraint(equalToConstant: 40.0).isActive = true;
+        //pRelayLabel.leftAnchor.constraint(equalTo: pRelayViewContent.leftAnchor).isActive = true;
+        //pRelayLabel.rightAnchor.constraint(equalTo: pRelayViewContent.rightAnchor).isActive = true;
     }
     
     // -----------------------------------
