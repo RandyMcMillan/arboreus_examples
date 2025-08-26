@@ -22,4 +22,5 @@ fi
 for project in $PROJECTS;do this_project=$(echo $project|sed 's/\/Cargo.toml//g');echo "this=$this_project"; sleep $SLEEP;ln -shf $TARGET $this_project;ls -F $this_project; done
 #for project in $PROJECTS;do this_project=$(echo $project|sed 's/Cargo.toml//g');echo "this=$this_project"; mkdir -p $this_project/target;ls -F $this_project; done
 #exit;
+for project in $PROJECTS;do this_project=$(echo $project|sed 's/\/Cargo.toml//g');echo "this=$this_project"; sleep $SLEEP;pushd $this_project && ./Build_iOS.sh; popd || true; done
 for project in $(ls --color=never **/*/*/*/Cargo.toml);do echo $project;sleep $SLEEP;cargo b --manifest-path $project;done
