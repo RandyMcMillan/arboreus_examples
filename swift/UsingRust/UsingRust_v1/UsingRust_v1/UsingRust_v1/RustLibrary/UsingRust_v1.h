@@ -4,3 +4,5 @@
 #include <stdlib.h>
 
 const char *fStringFromRustLibrary(void);
+
+const char *fStartRelay(void);
