@@ -26,7 +26,8 @@ class AViewControllerTemplate: UIViewController {
 		pViewContent.backgroundColor = __COLOR_FIOLENT_LIGHT;
         pRelayViewContent.translatesAutoresizingMaskIntoConstraints = false;
         pRelayViewContent.backgroundColor = __COLOR_FIOLENT_LIGHT;
-		pViewWarpper.addSubview(pViewContent);
+        pViewWarpper.addSubview(pViewContent);
+        pViewWarpper.addSubview(pRelayViewContent);
 	}
 	
 	override func viewDidLoad() {

@@ -28,7 +28,7 @@ class AMainViewController: AViewControllerTemplate {
         super.viewDidLoad();
         
         pButton.setTitle("Get from Rust", for: .normal);
-        pButton.addTarget(self, action: #selector(mActionStartRelayFromRustLibrary(inSender:)), for: .touchUpInside);
+        pButton.addTarget(self, action: #selector(mActionGetDataFromRustLibrary(inSender:)), for: .touchUpInside);
         pViewContent.addSubview(pButton);
         pButton.topAnchor.constraint(equalTo: pViewContent.topAnchor).isActive = true;
         pButton.heightAnchor.constraint(equalToConstant: 80.0).isActive = true;
@@ -47,9 +47,9 @@ class AMainViewController: AViewControllerTemplate {
         pLabel.rightAnchor.constraint(equalTo: pViewContent.rightAnchor).isActive = true;
         
         
-        //pRelayButton.setTitle("Get from Rust", for: .normal);
-        //pRelayButton.addTarget(self, action: //#selector(mActionGetDataFromRustLibrary(inSender:)), for: .touchUpInside);
-        //pViewContent.addSubview(pButton);
+        pRelayButton.setTitle("Get from Rust", for: .normal);
+        pRelayButton.addTarget(self, action: #selector(mActionGetDataFromRustLibrary(inSender:)), for: .touchUpInside);
+        pRelayViewContent.addSubview(pRelayButton);
         //pRelayButton.topAnchor.constraint(equalTo: pViewContent.topAnchor).isActive = true;
         //pRelayButton.heightAnchor.constraint(equalToConstant: 80.0).isActive = true;
         //pRelayButton.leftAnchor.constraint(equalTo: pViewContent.leftAnchor).isActive = //true;
