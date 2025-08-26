@@ -2,7 +2,7 @@
 #![allow(non_camel_case_types)]
 
 use std::ffi::{c_char, CStr};
-use UsingRustLib_v1::*;
+use Swift_UsingRustLib_v1::*;
 
 fn main() {
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 echo "pwd=`pwd`"
 TARGET=`pwd`/target
